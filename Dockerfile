@@ -18,7 +18,7 @@ RUN curl -L "https://github.com/autodistill/autodistill-yolov8/releases/download
 COPY . .
 
 # Make port 7860 available to the world outside this container
-EXPOSE 7860
+EXPOSE 8080
 
 # Run app.py when the container launches
 CMD ["python", "app.py"]
