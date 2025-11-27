@@ -34,4 +34,4 @@ poseDetector = gr.Interface(
 app = gr.TabbedInterface([objectDetector,poseDetector],["Object Detection","Pose Detection"], theme = "gstaff/sketch")
 
 if __name__ == "__main__":
-  app.launch(mcp_server = True)
+  app.launch(mcp_server = True, server_name = "0.0.0.0", server_port = 8080)
